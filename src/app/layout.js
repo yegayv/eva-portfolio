@@ -1,4 +1,6 @@
 import "../styles/globals.css";
+import "../styles/header.css";
+import "../styles/footer.css";
 import { Inter as FontSans } from "next/font/google";
 import { siteConfig } from "../config/site";
 import { AppNavigation } from "../components/app-navigation";
@@ -18,11 +20,11 @@ export const metadata = {
   description: siteConfig.description,
   authors: [
     {
-      name: "asd",
+      name: "makcum",
       url: "/",
     },
   ],
-  creator: "masd",
+  creator: "makcum",
   themeColor: [
     { media: "(prefers-color-scheme: dark)", color: "black" },
     { media: "(prefers-color-scheme: light)", color: "white" },
@@ -39,7 +41,7 @@ export const metadata = {
     card: "summary_large_image",
     title: siteConfig.name,
     description: siteConfig.description,
-    creator: "asda",
+    creator: "makcum",
   },
   icons: {
     icon: "/favicon.ico",

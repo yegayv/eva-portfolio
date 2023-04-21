@@ -1,7 +1,7 @@
 import React from "react";
 
 const IllustrationPage = () => {
-  return <div>Illustration</div>;
+  return <main>Illustration</main>;
 };
 
 export default IllustrationPage;

@@ -10,12 +10,11 @@ export const AppNavigation = () => {
           <Link className="nav-link" href="/">Home</Link>
         </div>
         <div className="navigation">
-
           {navigationConfig.mainNav.map((nav) => {
             if (nav.dropdown) {
               return <div className="dropdown">
                 <div type="button" className="nav-link">
-                  Gallery
+                  {nav.title}
                   <svg
                     width="16"
                     height="16"
