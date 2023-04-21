@@ -1,23 +1,16 @@
 export const navigationConfig = {
   mainNav: [
     {
-      title: "Projects",
-      href: "/projects",
-      dropdown: true,
-      dropdownContent: [
-        { title: "Sketchbook", href: "/sketchbook" },
-        { title: "Animation", href: "/animation" },
-        { title: "Illustration", href: "/illustration" },
-      ],
+      title: "Gallery",
+      href: "/gallery",
     },
-
     {
       title: "About",
-      href: "/about",
+      href: "#about",
     },
     {
       title: "Contact",
-      href: "/contact",
+      href: "#contact",
     },
   ],
 };
