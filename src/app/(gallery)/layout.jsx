@@ -12,28 +12,34 @@ export default function GalleryLayout({ children }) {
     <div className="flex ">
       <div className="bg-white h-screen min-w-[360px]">
         <div className="flex flex-col justify-around items-center h-full gap-12">
-          <div className="flex flex-col justify-center items-center gap-6 my-6">
+          <div className="flex flex-col justify-between items-center gap-10 my-6">
             <Link
               href={"/gallery/sketchbooks"}
-              className="text-black hover:text-black/40 text-4xl border-2 p-4 rounded-2xl w-[250px]"
+              className="relative px-6 py-3 font-bold text-black group text-4xl"
             >
-              Sketchbooks
+              <span class="absolute inset-0 w-full h-full transition duration-300 ease-out transform -translate-x-2 -translate-y-2 bg-red-300 group-hover:translate-x-0 group-hover:translate-y-0"></span>
+              <span class="absolute inset-0 w-full h-full border-4 border-black"></span>
+              <span class="relative">Sketchbooks</span>
             </Link>
             <Link
               href={"/gallery/animations"}
-              className="text-black hover:text-black/40 text-4xl border-2 p-4 rounded-2xl w-[250px]"
+              className="relative px-6 py-3 font-bold text-black group text-4xl"
             >
-              Animations
+              <span class="absolute inset-0 w-full h-full transition duration-300 ease-out transform -translate-x-2 -translate-y-2 bg-green-300 group-hover:translate-x-0 group-hover:translate-y-0"></span>
+              <span class="absolute inset-0 w-full h-full border-4 border-black"></span>
+              <span class="relative">Animations</span>
             </Link>
             <Link
-              href={"/gallery/illustrations"}
-              className="text-black hover:text-black/40 text-4xl border-2 p-4 rounded-2xl w-[250px]"
+              href={"/gallery/illustration"}
+              className="relative px-6 py-3 font-bold text-black group text-4xl"
             >
-              Illustrations
+              <span class="absolute inset-0 w-full h-full transition duration-300 ease-out transform -translate-x-2 -translate-y-2 bg-blue-300 group-hover:translate-x-0 group-hover:translate-y-0"></span>
+              <span class="absolute inset-0 w-full h-full border-4 border-black"></span>
+              <span class="relative">Illustration</span>
             </Link>
           </div>
           <div className="flex flex-col justify-center items-center gap-6 my-6">
-            <div className="footer-socials">
+            <div className="grid grid-cols-2 gap-10">
               <div>
                 <a href="https://www.instagram.com/sunmay.illust/">
                   <Image src={instagram_logo} />
