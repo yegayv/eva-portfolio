@@ -1,4 +1,3 @@
-import { AppAbout } from "@/src/components/app-about";
 import React from "react";
 import bg from "../../../../../public/bg_white.png";
 import portrait from "../../../../../public/portrait.png";
