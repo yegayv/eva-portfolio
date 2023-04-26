@@ -13,4 +13,22 @@ export const navigationConfig = {
       href: "#contact",
     },
   ],
+  sideBar: [
+    {
+      title: "Sketchbook",
+      href: "/gallery/sketchbooks",
+      color: "bg-red-300",
+      isDisabled: true,
+    },
+    {
+      title: "Animation",
+      href: "/gallery/animations",
+      color: "bg-green-300",
+    },
+    {
+      title: "Illustration",
+      href: "/gallery/illustrations",
+      color: "bg-blue-300",
+    },
+  ],
 };

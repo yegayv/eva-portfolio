@@ -1,12 +1,11 @@
-import { Inter as FontSans } from "next/font/google";
+import localFont from "next/font/local";
 import { siteConfig } from "../config/site";
 import "../styles/globals.css";
-import { AppNavigation } from "../components/app-navigation";
-import { AppFooter } from "../components/app-footer";
 
-const fontSans = FontSans({
-  subsets: ["latin"],
-  variable: "--font-inter",
+const appFont = localFont({
+  variable: "--font-brush-pen",
+  src: "../fonts/BrushPen-Regular.ttf",
+  display: "swap",
 });
 
 export const metadata = {
@@ -50,12 +49,8 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
-      <body className={fontSans.variable}>
-        <AppNavigation />
-        {children}
-        <AppFooter />
-      </body>
+    <html lang="en" className={appFont.className}>
+      <body>{children}</body>
     </html>
   );
 }
