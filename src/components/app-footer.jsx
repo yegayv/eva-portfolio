@@ -34,7 +34,7 @@ export const AppFooter = () => {
             </a>
           </div>
           <div>
-            <a href="https://www.twitter.com">
+            <a href="https://www.egor.love">
               <Image src={twitter_logo} width={35} height={35} />
             </a>
           </div>

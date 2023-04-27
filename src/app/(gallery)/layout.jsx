@@ -5,10 +5,8 @@ import { navigationConfig } from "@/src/config/nav";
 
 export default function GalleryLayout({ children }) {
   return (
-    <div className="flex flex-col h-screen">
-      <div className="hidden md:block">
-        <AppNavigation />
-      </div>
+    <div className="flex flex-col">
+      <AppNavigation />
       {children}
       <AppFooter />
     </div>

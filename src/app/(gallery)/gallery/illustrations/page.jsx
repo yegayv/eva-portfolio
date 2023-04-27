@@ -1,41 +1,53 @@
 import React from "react";
-import bg from "../../../../../public/bg_white.png";
-import portrait from "../../../../../public/portrait.png";
+import IllustrationCard from "@/src/components/gallery-cards/illustration-card";
+import { IllustrationConfig } from "@/src/config/illustration";
+import Link from "next/link";
+import buttonShape from "@/src/images/button_shapes/button_shape3.png";
 import Image from "next/image";
+
 const IllustrationsPage = () => {
   return (
-    <main className="container flex justify-center items-center">
-      <div>
-        <div className="w-full h-full relative">
-          <Image src={bg} alt="White background image" width={"100%"} />
-          <div className="absolute w-full h-full top-0 left-0  px-36 py-20">
-            <div className="flex h-full gap-12">
-              <Image
-                src={portrait}
-                alt="Representation of the artist"
-                className=""
-                width={500}
-              />
-              <div className="flex flex-col text-center w-full h-full justify-around ">
-                <h1 className="text-7xl ">Illustrations</h1>
-                <div className="flex flex-col gap-16">
-                  <p className="text-xs sm:text-sm lg:text-3xl font-extralight text-center ">
-                    Evgeniia's illustrations are full of charm and character,
-                    with a playful style that draws you in. She has worked on a
-                    range of projects, from book illustrations to editorial
-                    pieces, and her work always stands out for its originality
-                    and attention to detail. Her use of color and texture
-                    creates a world that is both fantastical and relatable.
-                  </p>
-                  <p className="text-xs sm:text-sm lg:text-3xl font-extralight text-center ">
-                    {" "}
-                    Let's make something together!
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
+    <main className="container flex flex-col justify-center items-center">
+      <div className="relative ">
+        <Image className="drop-shadow-2xl" src={buttonShape} width={650} />
+        <div className="absolute inset-0 grid place-content-center w-full h-full z-10 ">
+          <p className="text-6xl">Illustration</p>
         </div>
+      </div>
+      <div className="flex flex-col gap-12 h-full">
+        {IllustrationConfig.initialData.map((illustration, index) => (
+          <section
+            id={`illustration-${index}`}
+            className="h-screen flex flex-col justify-center items-center"
+          >
+            <div className="h-[75%] flex flex-col gap-12">
+              <IllustrationCard illustration={illustration} />
+              {index != IllustrationConfig.initialData.length - 1 && (
+                <div className="flex items-center before:h-[3px] before:flex-1  before:bg-black before:content-[''] after:h-[3px] after:flex-1 after:bg-black  after:content-['']">
+                  <Link
+                    href={`/gallery/illustrations/#illustration-${index + 1}`}
+                    type="button"
+                    className="flex items-center rounded-full border border-black bg-secondary-50 px-3 py-2 text-center text-xl font-serif  bg-black text-white hover:bg-gray-100"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 20 20"
+                      fill="currentColor"
+                      className="mr-1 h-6 w-6"
+                    >
+                      <path
+                        fillRule="evenodd"
+                        d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
+                        clipRule="evenodd"
+                      />
+                    </svg>
+                    DOWN
+                  </Link>
+                </div>
+              )}
+            </div>
+          </section>
+        ))}
       </div>
     </main>
   );
