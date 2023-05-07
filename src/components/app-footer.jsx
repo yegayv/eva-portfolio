@@ -2,7 +2,6 @@ import React from "react";
 import Link from "next/link";
 import { navigationConfig } from "../config/nav";
 import Image from "next/image";
-import evgeniia_namestnikova from "../../public/evgeniia_namestnikova.png";
 import instagram_logo from "../../public/instagram_logo.png";
 import youtube_logo from "../../public/youtube_logo.png";
 import twitter_logo from "../../public/twitter_logo.png";
@@ -16,7 +15,10 @@ export const AppFooter = () => {
         <div className="flex gap-6 content-center">
           <ul className="list-none h-[50px] content-center flex flex-row gap-6 items-center">
             {navigationConfig.mainNav.map((nav) => (
-              <li className="text-2xl  md:text-xl inline-block relative pr-5 before:content-['/'] before:absolute before:top-1/2 before:-translate-y-1/2 before:right-0 before:decoration-[rgba(0,0,0,0.322)] last:pr-0 last-of-type:before:hidden">
+              <li
+                key={nav.href}
+                className="text-2xl  md:text-xl inline-block relative pr-5 before:content-['/'] before:absolute before:top-1/2 before:-translate-y-1/2 before:right-0 before:decoration-[rgba(0,0,0,0.322)] last:pr-0 last-of-type:before:hidden"
+              >
                 <Link
                   className="text-black/40 hover:text-black"
                   href={nav.href}

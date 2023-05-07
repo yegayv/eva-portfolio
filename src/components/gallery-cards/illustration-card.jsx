@@ -1,8 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
-import vuts16 from "@/public/illustrations/VUtS/VUtS16.png";
-import vuts1 from "@/public/illustrations/VUtS/VUtS1.png";
 
 const IllustrationCard = ({ illustration }) => {
   return (

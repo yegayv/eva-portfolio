@@ -1,7 +1,4 @@
 import React from "react";
-import IllustrationCard from "@/src/components/gallery-cards/illustration-card";
-import { IllustrationConfig } from "@/src/config/illustration";
-import Link from "next/link";
 
 const IllustrationSlugPage = ({ params }) => {
   return (
