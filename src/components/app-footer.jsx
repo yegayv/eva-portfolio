@@ -36,11 +36,6 @@ export const AppFooter = () => {
             </a>
           </div>
           <div>
-            <a href="https://www.egor.love">
-              <Image src={twitter_logo} width={35} height={35} />
-            </a>
-          </div>
-          <div>
             <a href="https://www.youtube.com/channel/UCvpdGE-L52LVdFtbLZByJZw">
               <Image src={youtube_logo} width={35} height={35} />
             </a>

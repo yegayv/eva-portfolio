@@ -24,18 +24,14 @@ export const AboutSection = () => {
           width={500}
         />
         <div className="flex flex-col text-center w-full h-full justify-center gap-12">
-          <h1 className="text-7xl font-bold">About</h1>
+          <h1 className="text-7xl">About</h1>
           <div className="flex flex-col gap-16">
-            <p className="text-xs sm:text-sm lg:text-3xl font-extralight text-center ">
-              Welcome to the Gallery section of Evgeniia Namestnikova's
-              portfolio website. Here you'll find a showcase of her work, which
-              is divided into three categories: animations, illustrations, and
-              sketchbooks. Take a look at some of her most exciting projects and
-              see the unique style and skill that she brings to each one.
-            </p>
-            <p className="text-xs sm:text-sm lg:text-3xl font-extralight text-center ">
-              {" "}
-              Let's make something together!
+            <p className="text-xs sm:text-sm lg:text-2xl font-extralight text-center ">
+              Evgeniia, a narrative and editorial illustrator from Russia, is
+              currently located in Ontario. Her artwork is a unique blend of
+              traditional folklore, modern culture, and elements of nature. She
+              never excludes the use of traditional materials, which always
+              helps her to create whimsical and dynamic illustrations.
             </p>
           </div>
         </div>

@@ -73,9 +73,7 @@ const GalleryPage = () => {
                   width={500}
                 />
                 <div className="flex flex-col text-center w-full h-full justify-center gap-5 xl:gap-12">
-                  <h1 className="text-2xl xl:text-5xl 2xl:text-7xl font-bold">
-                    Gallery
-                  </h1>
+                  <h1 className="text-2xl xl:text-5xl 2xl:text-7xl">Gallery</h1>
                   <div className="flex flex-col gap-5 xl:gap-16">
                     <p className="text-xs sm:text-sm md:text-lg xl:text-xl 2xl:text-3xl font-extralight text-center ">
                       Welcome to the Gallery section of Evgeniia Namestnikova's

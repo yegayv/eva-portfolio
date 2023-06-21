@@ -1,8 +1,7 @@
 import Image from "next/image";
 import React from "react";
-import bg from "@/../public/bg_white.png";
-import portrait from "@/../public/portrait.png";
 import ButtonMailto from "../button-mail-to";
+import btnShape3 from "@/src/images/button_shapes/button_shape3.png";
 
 const ContactSection = () => {
   return (
@@ -10,34 +9,34 @@ const ContactSection = () => {
       id="contact"
       className="relative h-screen flex items-center justify-center w-full"
     >
-      <Image
+      {/* <Image
         src={bg}
         alt="White background image"
         width={"100%"}
         height={600}
-        className="drop-shadow-2xl w-[80%]"
-      />
+        className="drop-shadow-2xl w-[80%] h-[120%] "
+      /> */}
       <div className="absolute w-full h-full flex justify-center items-center max-w-screen-lg">
         {/* Contact Us */}
-        <div className="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
+        <div className="max-w-[85rem] px-4 py-10 lg:px-6 lg:py-12 mx-auto ">
           <div className="max-w-xl mx-auto">
-            <div className="text-center">
-              <h1 className="text-3xl font-bold text-gray-800 sm:text-6xl dark:text-white">
+            <div className="relative">
+              <Image src={btnShape3} />
+            </div>
+            <div className="text-center absolute top-0 left-0 w-full h-full">
+              <h1 className="text-3xl text-gray-800 sm:text-6xl dark:text-white">
                 Contact me
               </h1>
-              <p className="mt-3 text-gray-600 dark:text-gray-400 text-3xl">
-                We'd love to talk about how we can help you.
-              </p>
             </div>
           </div>
-          <div className="mt-12 max-w-lg mx-auto">
+          <div className="mt-12 max-w-lg mx-auto ">
             {/* Card */}
-            <div className="flex flex-col border rounded-xl p-4 sm:p-6 lg:p-8 dark:border-gray-700 font-serif">
-              <h2 className="mb-8 text-xl font-semibold text-gray-800 dark:text-gray-200">
+            <div className="flex flex-col border rounded-xl p-4 sm:p-6 lg:p-12 dark:border-gray-700  bg-white  font-serif">
+              <h2 className="mb-3 text-xl font-semibold text-gray-800 dark:text-gray-200">
                 Fill in the form
               </h2>
               <form>
-                <div className="grid gap-4 lg:gap-6">
+                <div className="grid gap-4">
                   {/* Grid */}
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 lg:gap-6">
                     <div>
@@ -51,7 +50,7 @@ const ContactSection = () => {
                         type="text"
                         name="hs-firstname-contacts-1"
                         id="hs-firstname-contacts-1"
-                        className="py-3 px-4 block w-full border-gray-200 border-2 rounded-md text-sm focus:border-blue-500 focus:ring-blue-500 dark:bg-slate-900 dark:border-gray-700 dark:text-gray-400"
+                        className="px-4 py-2 block w-full border-gray-200 border-2 rounded-md text-sm focus:border-blue-500 focus:ring-blue-500 dark:bg-slate-900 dark:border-gray-700 dark:text-gray-400"
                       />
                     </div>
                     <div>
@@ -65,7 +64,7 @@ const ContactSection = () => {
                         type="text"
                         name="hs-lastname-contacts-1"
                         id="hs-lastname-contacts-1"
-                        className="py-3 px-4 block w-full border-gray-200 border-2 rounded-md text-sm focus:border-blue-500 focus:ring-blue-500 dark:bg-slate-900 dark:border-gray-700 dark:text-gray-400"
+                        className="px-4 py-2 block w-full border-gray-200 border-2 rounded-md text-sm focus:border-blue-500 focus:ring-blue-500 dark:bg-slate-900 dark:border-gray-700 dark:text-gray-400"
                       />
                     </div>
                   </div>
@@ -84,7 +83,7 @@ const ContactSection = () => {
                         name="hs-email-contacts-1"
                         id="hs-email-contacts-1"
                         autoComplete="email"
-                        className="py-3 px-4 block w-full border-gray-200 border-2 rounded-md text-sm focus:border-blue-500 focus:ring-blue-500 dark:bg-slate-900 dark:border-gray-700 dark:text-gray-400"
+                        className="px-4 py-2 block w-full border-gray-200 border-2 rounded-md text-sm focus:border-blue-500 focus:ring-blue-500 dark:bg-slate-900 dark:border-gray-700 dark:text-gray-400"
                       />
                     </div>
                     <div>
@@ -98,7 +97,7 @@ const ContactSection = () => {
                         type="text"
                         name="hs-phone-number-1"
                         id="hs-phone-number-1"
-                        className="py-3 px-4 block w-full border-gray-200 border-2 rounded-md text-sm focus:border-blue-500 focus:ring-blue-500 dark:bg-slate-900 dark:border-gray-700 dark:text-gray-400"
+                        className="px-4 py-2 block w-full border-gray-200 border-2 rounded-md text-sm focus:border-blue-500 focus:ring-blue-500 dark:bg-slate-900 dark:border-gray-700 dark:text-gray-400"
                       />
                     </div>
                   </div>
@@ -114,7 +113,7 @@ const ContactSection = () => {
                       id="hs-about-contacts-1"
                       name="hs-about-contacts-1"
                       rows={4}
-                      className="py-3 px-4 block w-full border-gray-200 border-2 rounded-md text-sm focus:border-blue-500 focus:ring-blue-500 dark:bg-slate-900 dark:border-gray-700 dark:text-gray-400 resize-none"
+                      className="px-4 py-2 block w-full border-gray-200 border-2 rounded-md text-sm focus:border-blue-500 focus:ring-blue-500 dark:bg-slate-900 dark:border-gray-700 dark:text-gray-400 resize-none"
                       defaultValue={""}
                     />
                   </div>

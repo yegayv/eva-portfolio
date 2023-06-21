@@ -10,10 +10,10 @@ const IllustrationCard = ({ illustration }) => {
           <h2 className="text-6xl">{illustration.title}</h2>
           <p className="text-2xl">{illustration.description}</p>
         </div>
-        <div className="flex flex-col text-center gap-2">
+        <div className="flex flex-col text-center items-start gap-5">
           <Link
             href={`/gallery/illustrations/${illustration.title}`}
-            className="text-2xl font-bold border-dashed border-black border-2"
+            className="text-2xl"
           >
             See more
           </Link>
