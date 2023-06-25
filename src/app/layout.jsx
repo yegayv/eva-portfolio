@@ -2,9 +2,15 @@ import localFont from "next/font/local";
 import { siteConfig } from "../config/site";
 import "../styles/globals.css";
 
-const appFont = localFont({
+const headerFont = localFont({
   variable: "--font-brush-pen",
   src: "../fonts/BrushPen-Regular.ttf",
+  display: "swap",
+});
+
+const appFont = localFont({
+  variable: "--font-quicksand",
+  src: "../fonts/Quicksand.ttf",
   display: "swap",
 });
 
@@ -49,7 +55,7 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" className={appFont.className}>
+    <html lang="en" className={(appFont.className, headerFont.className)}>
       <body>{children}</body>
     </html>
   );

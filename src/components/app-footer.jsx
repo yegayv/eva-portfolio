@@ -1,11 +1,9 @@
-import React from "react";
 import Link from "next/link";
 import { navigationConfig } from "../config/nav";
 import Image from "next/image";
-import instagram_logo from "../../public/instagram_logo.png";
-import youtube_logo from "../../public/youtube_logo.png";
-import twitter_logo from "../../public/twitter_logo.png";
-import linkedin_logo from "../../public/linkedin_logo.png";
+import instagram_logo from "../../public/instagram_logo.svg";
+import youtube_logo from "../../public/youtube_logo.svg";
+import linkedin_logo from "../../public/linkedin_logo.svg";
 
 export const AppFooter = () => {
   return (

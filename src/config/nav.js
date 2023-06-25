@@ -15,8 +15,8 @@ export const navigationConfig = {
   ],
   sideBar: [
     {
-      title: "Sketchbook",
-      href: "/gallery/sketchbooks",
+      title: "Illustration",
+      href: "/gallery/illustrations",
       color: "bg-red-300",
       isDisabled: true,
     },
@@ -26,8 +26,8 @@ export const navigationConfig = {
       color: "bg-green-300",
     },
     {
-      title: "Illustration",
-      href: "/gallery/illustrations",
+      title: "Sketchbook",
+      href: "/gallery/sketchbooks",
       color: "bg-blue-300",
     },
   ],

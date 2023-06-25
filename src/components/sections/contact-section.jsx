@@ -14,22 +14,22 @@ const ContactSection = () => {
         alt="White background image"
         width={"100%"}
         height={600}
-        className="drop-shadow-2xl w-[80%] h-[120%] "
+        className="drop-shadow-2xl w-[80%] h-[120%]"
       /> */}
       <div className="absolute w-full h-full flex justify-center items-center max-w-screen-lg">
         {/* Contact Us */}
         <div className="max-w-[85rem] px-4 py-10 lg:px-6 lg:py-12 mx-auto ">
-          <div className="max-w-xl mx-auto">
+          <div className="max-w-xl mx-auto relative">
             <div className="relative">
               <Image src={btnShape3} />
             </div>
-            <div className="text-center absolute top-0 left-0 w-full h-full">
+            <div className="absolute inset-0 flex justify-center items-center">
               <h1 className="text-3xl text-gray-800 sm:text-6xl dark:text-white">
                 Contact me
               </h1>
             </div>
           </div>
-          <div className="mt-12 max-w-lg mx-auto ">
+          <div className="mt-12 max-w-lg mx-auto">
             {/* Card */}
             <div className="flex flex-col border rounded-xl p-4 sm:p-6 lg:p-12 dark:border-gray-700  bg-white  font-serif">
               <h2 className="mb-3 text-xl font-semibold text-gray-800 dark:text-gray-200">
