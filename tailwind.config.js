@@ -21,7 +21,8 @@ module.exports = {
     },
     extend: {
       fontFamily: {
-        sans: ["var(--font-brush-pen)", ...fontFamily.sans],
+        heading: ["var(--font-heading)", ...fontFamily.sans],
+        sans: ["var(--font-sans)", ...fontFamily.sans],
       },
     },
   },

@@ -21,7 +21,7 @@ export const AppNavigation = () => {
         <div className="flex gap-6 items-center pl-6">
           {navigationConfig.mainNav.map((nav, index) => (
             <Link key={index} className="text-3xl h-fit" href={nav.href}>
-              {nav.title}
+              <h1>{nav.title}</h1>
             </Link>
           ))}
         </div>

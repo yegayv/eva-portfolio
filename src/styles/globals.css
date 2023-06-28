@@ -15,7 +15,7 @@ body {
   display: flex;
   flex-direction: column;
   z-index: 1;
-  background-repeat: no-repeat;
+  background-repeat: repeat;
   background-size: cover;
   font-family: var(--font-quicksand), sans-serif;
 }
@@ -62,5 +62,5 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: var(--font-brush-pen), sans-serif;
+  font-family: var(--font-heading), sans-serif;
 }

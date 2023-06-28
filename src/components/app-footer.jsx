@@ -17,12 +17,14 @@ export const AppFooter = () => {
                 key={nav.href}
                 className="text-2xl  md:text-xl inline-block relative pr-5 before:content-['/'] before:absolute before:top-1/2 before:-translate-y-1/2 before:right-0 before:decoration-[rgba(0,0,0,0.322)] last:pr-0 last-of-type:before:hidden"
               >
-                <Link
-                  className="text-black/40 hover:text-black"
-                  href={nav.href}
-                >
-                  {nav.title}
-                </Link>
+                <h5>
+                  <Link
+                    className="text-black/40 hover:text-black"
+                    href={nav.href}
+                  >
+                    {nav.title}
+                  </Link>
+                </h5>
               </li>
             ))}
           </ul>

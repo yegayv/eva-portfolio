@@ -29,7 +29,7 @@ const ContactSection = () => {
               </h1>
             </div>
           </div>
-          <div className="mt-12 max-w-lg mx-auto">
+          <div className="mt-12 max-w-lg mx-auto mb-10">
             {/* Card */}
             <div className="flex flex-col border rounded-xl p-4 sm:p-6 lg:p-12 dark:border-gray-700  bg-white  font-serif">
               <h2 className="mb-3 text-xl font-semibold text-gray-800 dark:text-gray-200">

@@ -8,7 +8,7 @@ import btnShape3 from "@/src/images/button_shapes/button_shape1.png";
 
 const GalleryPage = () => {
   return (
-    <div className="flex flex-col lg:flex-row grow overflow-hidden justify-center items-center">
+    <div className="flex flex-col w-full h-screen">
       <div className="px-5 lg:min-w-[80px] h-full">
         <div className="flex flex-col justify-around items-center h-full gap-12">
           <div className="flex flex-col justify-between items-center gap-10">
@@ -43,7 +43,9 @@ const GalleryPage = () => {
                       href={sidebarItem.href}
                       className="relative px-6 py-3 text-black group text-5xl"
                     >
-                      <span className="relative ">{sidebarItem.title}</span>
+                      <span className="relative ">
+                        <h1>{sidebarItem.title}</h1>
+                      </span>
                     </Link>
                   </div>
                 </div>

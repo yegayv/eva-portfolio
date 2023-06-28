@@ -1,17 +1,17 @@
 import localFont from "next/font/local";
+import { Quicksand } from "next/font/google";
 import { siteConfig } from "../config/site";
 import "../styles/globals.css";
 
-const headerFont = localFont({
-  variable: "--font-brush-pen",
-  src: "../fonts/BrushPen-Regular.ttf",
-  display: "swap",
+const fontSans = Quicksand({
+  weight: "300",
+  subsets: ["latin"],
+  variable: "--font-sans",
 });
 
-const appFont = localFont({
-  variable: "--font-quicksand",
-  src: "../fonts/Quicksand.ttf",
-  display: "swap",
+const fontHeading = localFont({
+  src: "../fonts/BrushPen-Regular.ttf",
+  variable: "--font-heading",
 });
 
 export const metadata = {
@@ -55,7 +55,7 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" className={(appFont.className, headerFont.className)}>
+    <html lang="en" className={`${fontHeading.variable} ${fontSans.variable}`}>
       <body>{children}</body>
     </html>
   );
