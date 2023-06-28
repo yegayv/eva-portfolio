@@ -1,7 +1,6 @@
 import React from "react";
 import IllustrationCard from "@/src/components/gallery-cards/illustration-card";
 import { IllustrationConfig } from "@/src/config/illustration";
-import Link from "next/link";
 import buttonShape from "@/src/images/button_shapes/button_shape3.png";
 import Image from "next/image";
 
