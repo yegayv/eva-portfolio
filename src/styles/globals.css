@@ -7,7 +7,7 @@ html {
   height: -webkit-fill-available;
   display: flex;
   flex-direction: column;
-  font-size: 1.25rem;
+  font-size: 1rem;
 }
 
 body {
@@ -17,7 +17,9 @@ body {
   z-index: 1;
   background-repeat: repeat;
   background-size: cover;
-  font-family: var(--font-quicksand), sans-serif;
+  min-height: 100%;
+  min-height: 100dvh;
+  @apply font-sans;
 }
 
 main {
@@ -26,7 +28,6 @@ main {
   position: relative;
 
   width: 100%;
-  height: 100%;
 }
 
 a {
@@ -62,5 +63,5 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: var(--font-heading), sans-serif;
+  @apply font-heading;
 }

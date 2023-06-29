@@ -9,17 +9,17 @@ export const AppFooter = () => {
   return (
     <footer className="bg-white flex justify-start z-50">
       <div className="relative w-[90%] m-auto justify-center md:justify-between flex flex-col md:flex-row gap-2 md:gap-0 items-center py-3 px-2 text-xl">
-        <div className="text-3xl md:text-2xl">Evgeniia Namestnikova</div>
+        <div className="">Evgeniia Namestnikova</div>
         <div className="flex gap-6 content-center">
           <ul className="list-none h-[50px] content-center flex flex-row gap-6 items-center">
             {navigationConfig.mainNav.map((nav) => (
               <li
                 key={nav.href}
-                className="text-2xl  md:text-xl inline-block relative pr-5 before:content-['/'] before:absolute before:top-1/2 before:-translate-y-1/2 before:right-0 before:decoration-[rgba(0,0,0,0.322)] last:pr-0 last-of-type:before:hidden"
+                className="inline-block relative pr-5 before:content-['/'] before:absolute before:top-1/2 before:-translate-y-1/2 before:right-0 before:decoration-[rgba(0,0,0,0.322)] last:pr-0 last-of-type:before:hidden"
               >
                 <h5>
                   <Link
-                    className="text-black/40 hover:text-black"
+                    className="text-xl md:text-2xl  text-black/40 hover:text-black"
                     href={nav.href}
                   >
                     {nav.title}

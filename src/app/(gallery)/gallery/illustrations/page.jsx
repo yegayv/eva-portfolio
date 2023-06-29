@@ -19,9 +19,7 @@ const IllustrationsPage = () => {
             id={`illustration-${index}`}
             className="h-screen flex flex-col justify-center items-center"
           >
-            <div className="h-[75%] flex flex-col gap-12">
-              <IllustrationCard illustration={illustration} />
-            </div>
+            <IllustrationCard illustration={illustration} />
           </section>
         ))}
       </div>
