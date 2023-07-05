@@ -13,13 +13,6 @@ const SketchbooksPage = () => {
       </div>
       <div className="flex flex-col justify-center w-full gap-5">
         <SketchbookCard />
-        <SketchbookCard />
-        <SketchbookCard />
-        <SketchbookCard />
-        <SketchbookCard />
-        <SketchbookCard />
-        <SketchbookCard />
-        <SketchbookCard />
       </div>
     </main>
   );
