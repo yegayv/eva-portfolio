@@ -11,7 +11,7 @@ html {
 }
 
 body {
-  background-image: url(../../public/background_main.jpg);
+  background-image: url(../../public/background_main.png);
   display: flex;
   flex-direction: column;
   z-index: 1;
