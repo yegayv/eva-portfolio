@@ -7,7 +7,7 @@ const IndexLayout = ({ children }) => {
     <>
       {/* <AppNavigation /> */}
       {children}
-      <AppFooter />
+      {/* <AppFooter /> */}
     </>
   );
 };
