@@ -1,7 +1,7 @@
 import Image from "next/image";
 import React from "react";
 import hero from "../../../public/hero.webp";
-import cow from "@/public/cow_main.png";
+import cow from "../../../public/cow_main.png";
 import { AboutSection } from "@/src/components/sections/about-section";
 import ContactSection from "@/src/components/sections/contact-section";
 
