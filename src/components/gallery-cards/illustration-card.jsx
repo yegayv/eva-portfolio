@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
-import bg from "@/../public/bg_white.png";
+import bg from "../../../public/bg_white.png";
 
 const IllustrationCard = ({ illustration }) => {
   return (
