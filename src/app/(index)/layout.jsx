@@ -5,7 +5,7 @@ import React from "react";
 const IndexLayout = ({ children }) => {
   return (
     <>
-      <AppNavigation />
+      {/* <AppNavigation /> */}
       {children}
       <AppFooter />
     </>

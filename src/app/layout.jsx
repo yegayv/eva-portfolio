@@ -22,11 +22,11 @@ export const metadata = {
   description: siteConfig.description,
   authors: [
     {
-      name: "makcum",
+      name: "yegay",
       url: "/",
     },
   ],
-  creator: "makcum",
+  creator: "yegay",
   themeColor: [
     { media: "(prefers-color-scheme: dark)", color: "black" },
     { media: "(prefers-color-scheme: light)", color: "white" },
